@@ -11,5 +11,5 @@ import os
 options = webdriver.ChromeOptions()
 options.add_experimental_option("excludeSwitches", ["enable-logging"])
 driver = webdriver.Chrome(service = Service(ChromeDriverManager().install()),options = options)
-driver.get('url')
+driver.get('https://www.naver.com/')
 driver.maximize_window()
