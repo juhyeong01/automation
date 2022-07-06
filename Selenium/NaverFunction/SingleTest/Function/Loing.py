@@ -28,6 +28,7 @@ class Login(BaseFunction):
 
         self.send_keys(self.input_id, Accounts["id"])
 
+        
     def send_keys_pw(self):
 
         self.send_keys(self.input_pw, Accounts["pw"])
