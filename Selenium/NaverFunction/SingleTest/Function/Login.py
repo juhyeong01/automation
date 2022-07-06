@@ -11,7 +11,7 @@ class Login(BaseFunction):
 
     btn_login = (By.ID, "log.login")
 
-    url = "https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com"
+    url = "https://nid.naver.com/"
 
 
     def __init__(self, driver):
