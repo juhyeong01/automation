@@ -26,8 +26,8 @@ class BaseFunction:
             WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(locator)).click()
 
         except NoSuchElementException:
-            raise NoSuchElementException("NoSuchElementExcpetion : %s" str(locator))
-
+            raise NoSuchElementException("NoSuchElementExcpetion : %s" %str(locator))
+            
         except TimeoutException:
             raise TimeoutException("TimeoutException")
 
@@ -40,7 +40,7 @@ class BaseFunction:
             return self.driver.find_element(locator)
             
         except NoSuchElementException:
-            raise NoSuchElementException("NoSuchElementExcpetion : %s" str(locator))
+             raise NoSuchElementException("NoSuchElementException : %s" % str(locator))
 
         except TimeoutException:
             raise TimeoutException("TimeoutException")
