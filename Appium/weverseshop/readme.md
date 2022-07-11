@@ -19,4 +19,9 @@
 
 
 2. Architecutre
+
+
+
+
+
 ![image](https://user-images.githubusercontent.com/37740450/178257500-3a738a9c-d8fd-4d17-a8fa-ba30ec2c6632.png)
