@@ -14,7 +14,7 @@
 
 - Runner.py : 테스트 수행 및 결과 리포트 생성
 
-- TestReport : 테스트 결과 html 형식으로 저장되는 폴더
+- TestReport : 테스트 결과 html 형식으로 저장되는 폴더        
 
 
 
