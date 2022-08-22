@@ -65,35 +65,30 @@ text = alert.text
 alert.dismiss()
 
 <h2>Prompt</h2>
-#Click the link to activate the alert
-
+#Click the link to activate the alert<br>
 driver.find_element(By.LINK_TEXT, "See a sample prompt").click()
 
-#Wait for the alert to be displayed
-
+#Wait for the alert to be displayed<br>
 wait.until(expected_conditions.alert_is_present())
 
-#Store the alert in a variable for reuse
-
+#Store the alert in a variable for reuse<br>
 alert = Alert(driver)
 
-#Type your message
-
+#Type your message<br>
 alert.send_keys("Selenium")
 
-#Press the OK button
-
+#Press the OK button<br>
 alert.accept()
 
 <h1>Cookies</h1>
 
 <h2>Add cookies</h2>
 
-from selenium import webdriver
-driver = webdriver.Chrome()
+from selenium import webdriver<br>
+driver = webdriver.Chrome()<br>
 driver.get("http://www.example.com")
 
-#Add the cookie into current browser context
+#Add the cookie into current browser context<br>
 driver.add_cookie({"name" : "key", "value" : "value"})
 
 <h2>Get Named Cookie</h2>
@@ -112,7 +107,7 @@ print(driver.get_cookie('foo'))
 from selenium import webdriver<br>
 driver = webdriver.Chrome()
 
-#Navigate to url
+#Navigate to url<br>
 driver.get("http://www.example.com")
 
 driver.add_cookie({"name" : "test1" , "value" : "cookie1"})<br>
