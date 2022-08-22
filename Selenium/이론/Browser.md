@@ -97,25 +97,27 @@ driver.get("http://www.example.com")
 driver.add_cookie({"name" : "key", "value" : "value"})
 
 <h2>Get Named Cookie</h2>
-driver = webdriver.Chrome()
+driver = webdriver.Chrome()<br>
 driver.get("http://www.example.com")
+
 
 #Add the cookie into current browser context<br>
 driver.add_cookie({"name" : "foo", "value" : "bar"})
 
-#Get cookie details with named cookie 'foo'
+
+#Get cookie details with named cookie 'foo'<br>
 print(driver.get_cookie('foo'))
 
 <h2>Get All Cookies</h2>
-from selenium import webdriver
+from selenium import webdriver<br>
 driver = webdriver.Chrome()
 
 #Navigate to url
 driver.get("http://www.example.com")
 
-driver.add_cookie({"name" : "test1" , "value" : "cookie1"})
+driver.add_cookie({"name" : "test1" , "value" : "cookie1"})<br>
 driver.add_cookie({"name" : "test2" , "value" : "cookie2"})
 
-#Get all available cookies
+#Get all available cookies<br>
 print(driver.get_cookies(())
 
