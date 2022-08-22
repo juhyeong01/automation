@@ -119,3 +119,6 @@ driver.add_cookie({"name" : "test2" , "value" : "cookie2"})
 #Get all available cookies<br>
 print(driver.get_cookies(())
 
+
+
+<h1>Frames</h1>
