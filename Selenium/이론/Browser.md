@@ -34,6 +34,9 @@ alert = wait.until(expected_conditions.alert_is_present())
 
 #Store the alert text in a variable
 
+
+
+
 text = alert.text
 
 #Press the OK button
@@ -81,3 +84,24 @@ alert.send_keys("Selenium")
 #Press the OK button
 
 alert.accept()
+
+<h1>Cookies</h1>
+
+<h2>Add cookies</h2>
+
+from selenium import webdriver
+driver = webdriver.Chrome()
+driver.get("http://www.example.com")
+
+#Add the cookie into current browser context
+driver.add_cookie({"name" : "key", "value" : "value"})
+
+<h2>Get Named Cookie</h2>
+driver = webdriver.Chrome()
+driver.get("http://www.example.com")
+
+#Add the cookie into current browser context
+driver.add_cookie({"name" : "foo", "value" : "bar"})
+
+# Get cookie details with named cookie 'foo'
+
