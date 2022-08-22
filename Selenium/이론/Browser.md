@@ -25,7 +25,7 @@ driver.refresh()
 
 <h2>Alerts</h2>
 #Click the link to activate the alert<br>
-driver.find_element(By.LINK_TEXT, "See an example alert").click()
+driver.find_element(By.LINK_TEXT, "See an example alert").click()<br><br>
 
 
 #Wait for the alert to be displayed and store it in a variable<br>
@@ -41,7 +41,7 @@ alert.accept()
 
 <h2>Confirm</h2>
 #Click the link to activate the alert<br>
-driver.find_element(By.LINK_TEXT, "See an example alert").click()
+driver.find_element(By.LINK_TEXT, "See an example alert").click()<br><br>
 
 
 #Wait for the alert to be displayed and store it in a variable<br>
@@ -61,8 +61,7 @@ alert.dismiss()
 
 <h2>Prompt</h2>
 #Click the link to activate the alert<br>
-driver.find_element(By.LINK_TEXT, "See a sample prompt").click()
-
+driver.find_element(By.LINK_TEXT, "See a sample prompt").click()<br><br>
 
 #Wait for the alert to be displayed<br>
 wait.until(expected_conditions.alert_is_present())
@@ -106,7 +105,7 @@ print(driver.get_cookie('foo'))
 
 <h2>Get All Cookies</h2>
 from selenium import webdriver<br>
-driver = webdriver.Chrome()
+driver = webdriver.Chrome()<br><br>
 
 
 #Navigate to url<br>
