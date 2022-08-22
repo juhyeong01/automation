@@ -100,7 +100,7 @@ driver.add_cookie({"name" : "key", "value" : "value"})
 driver = webdriver.Chrome()
 driver.get("http://www.example.com")
 
-#Add the cookie into current browser context
+#Add the cookie into current browser context<br>
 driver.add_cookie({"name" : "foo", "value" : "bar"})
 
 #Get cookie details with named cookie 'foo'
