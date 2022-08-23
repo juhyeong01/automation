@@ -122,3 +122,24 @@ print(driver.get_cookies(())
 
 
 <h1>Frames</h1>
+
+<div id="modal">
+  <iframe id="buttonframe" name="myframe"  src="https://seleniumhq.github.io">
+   <button>Click here</button>
+ </iframe>
+</div><br><br>
+
+#This won`t work<br>
+driver.find_element(By.TAG_NAME, 'button').click()<br><br>
+
+<h2>Using a WebElement</h2>
+#Store ifram web element<br>
+iframe = driver.find_element(By.CSS_SELECTOR, "#modal > iframe")<br><br>
+
+#switch to selected frame<br>
+driver.switch_to.frame(iframe)<br><br>
+
+#Now click on button<br>
+driver.find_element(By.TAG_NAME, 'button')click()<br><br>
+
+
