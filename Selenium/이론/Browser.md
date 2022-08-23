@@ -148,3 +148,10 @@ driver.switch_to.frame("buttonframe") <br><br>
 
 #Now Click on the button<br>
 driver.find_element(By.TAG_NAME, "button").click()<br><br>
+
+<h2>Using an index</h2>
+#Switching to second iframe based on index
+iframe = driver.find_element(By.TAG_NAME, "iframe")[1]<br><br>
+
+#switch to selected iframe<br>
+driver.switch_to.frame(iframe)<br><br>
