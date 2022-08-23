@@ -167,7 +167,7 @@ driver.switch_to.default_content()
 driver.current_window_handle<br><br>
 
 <h2>Switching windows or tabs</h2>
-<code>
+<pre><code>
 from selenium import webdriver<br>
 from selenium.webdriver.support.ui import WebDriverWait<br>
 from selenium.webdriver.support import expected_condition as EC<br><br>
