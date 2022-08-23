@@ -188,16 +188,6 @@ with webdriver.Chrome() as driver:
     driver.find_element(By.LINK_TEXT, "new window").click()
     
     #Wait for the new window or tab
-    wait.until(EC.number_ofwindows_to_be(2))
-    
-    #Loop through until we find a new window handle
-    for window_handle 
-    
-
-    # Click the link which opens in a new window
-    driver.find_element(By.LINK_TEXT, "new window").click()
-
-    # Wait for the new window or tab
     wait.until(EC.number_of_windows_to_be(2))
     
     #Loop through until we find a new window handle
@@ -205,6 +195,6 @@ with webdriver.Chrome() as driver:
         if window_handle != original_window:
             driver.switch_to.window(window_handle)
             break
+            
     #Wait for the new tab to finish loading content
-    wait.until(EC.title_is("SeleniumHQ Browser Automation"))
-</code>
+    wait.until(EC.title_is("SeleniumHQ Browser Automation")</code>
