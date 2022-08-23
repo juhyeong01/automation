@@ -159,3 +159,14 @@ driver.switch_to.frame(iframe)<br><br>
 <h2>Leaving a frame</h2>
 switch back to default content<br>
 driver.switch_to.default_content()
+
+
+<h1>Window</h1>
+
+<h2>Get window handle</h2>
+driver.current_window_handle<br><br>
+
+from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_condition as EC
+
