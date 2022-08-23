@@ -173,7 +173,6 @@ from selenium.webdriver.support import expected_condition as EC
 
 <br><br>
 with webdriver.Chrome() as driver:
-
     #Open URL
     driver.get("https://seleniumhq.github.io")
     
