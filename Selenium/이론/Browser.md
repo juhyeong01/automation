@@ -169,11 +169,7 @@ driver.current_window_handle<br><br>
 <h2>Switching windows or tabs</h2>
 <pre><code>from selenium import webdriver<br>
 from selenium.webdriver.support.ui import WebDriverWait<br>
-from selenium.webdriver.support import expected_condition as EC
-
-
-
-
+from selenium.webdriver.support import expected_condition as EC<br><br>
 with webdriver.Chrome() as driver:
 
     #Open URL
@@ -201,4 +197,4 @@ with webdriver.Chrome() as driver:
             break
             
     #Wait for the new tab to finish loading content
-    wait.until(EC.title_is("SeleniumHQ Browser Automation")</code>
+    wait.until(EC.title_is("SeleniumHQ Browser Automation")</pre></code>
