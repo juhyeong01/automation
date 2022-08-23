@@ -172,6 +172,8 @@ from selenium.webdriver.support.ui import WebDriverWait<br>
 from selenium.webdriver.support import expected_condition as EC
 
 
+
+
 with webdriver.Chrome() as driver:
 
     #Open URL
