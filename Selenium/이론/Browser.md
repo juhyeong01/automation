@@ -155,3 +155,7 @@ iframe = driver.find_element(By.TAG_NAME, "iframe")[1]<br><br>
 
 #switch to selected iframe<br>
 driver.switch_to.frame(iframe)<br><br>
+
+<h2>Leaving a frame</h2>
+switch back to default content<br>
+driver.switch_to.default_content()
