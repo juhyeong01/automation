@@ -142,4 +142,8 @@ driver.switch_to.frame(iframe)<br><br>
 #Now click on button<br>
 driver.find_element(By.TAG_NAME, 'button')click()<br><br>
 
+<h2>Using a name or ID</h2>
+#Swith frame by id<br>
+driver.switch_to.frame("buttonframe")<br>
 
+#Now
