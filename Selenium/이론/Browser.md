@@ -166,7 +166,11 @@ driver.switch_to.default_content()
 <h2>Get window handle</h2>
 driver.current_window_handle<br><br>
 
-from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_condition as EC
+<h2>Switching windows or tabs</h2>
+<code>
+from selenium import webdriver<br>
+from selenium.webdriver.support.ui import WebDriverWait<br>
+from selenium.webdriver.support import expected_condition as EC<br><br>
 
+
+</code>
