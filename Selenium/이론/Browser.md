@@ -310,7 +310,7 @@ from selenium.webdriver.common.by import By
 
 <h2>Execute script</h2>
 
-#Stores the header element<br>
+#Stores the header element <br>
 header = driver.find_element(By.CSS_SELECTOR, "h1")<br><br>
 
 #Executing JavaScript to capture innerText of header element<br>
