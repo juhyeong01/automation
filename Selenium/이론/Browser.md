@@ -275,7 +275,7 @@ with webdriver.Chrome() as driver:
  #Returns and base64 encoded string into image.
  driver.save_screenshot('./image.png')
  
- driver.quit()</pre></code>
+ driver.quit()</code></pre>
  
  
  
