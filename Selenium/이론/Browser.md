@@ -291,8 +291,8 @@ with webdriver.Chrome() as driver:
  <h2>TakeElementScreenshot</h2>
  <pre>
  <code>
- from selenium import webdriver
- from selenium.webdriver.common.by import By
+from selenium import webdriver
+from selenium.webdriver.common.by import By
  
  driver = webdriver.Chrome()
  
