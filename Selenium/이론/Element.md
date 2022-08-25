@@ -18,3 +18,8 @@ tag name : Locates elements whose tag name amtches the search value<br><br>
 xpath : Locates elements matching an XPATH expression<br><br>
 
 <h2> Relative Locators</h2>
+
+![image](https://user-images.githubusercontent.com/37740450/186636738-47d847fb-2285-4a23-adae-4767b0de26f1.png)
+
+<h2> Above</h2>
+email_locator = locate_with(By.TAG_NAME, "input").above({By.ID : "password")<br>
