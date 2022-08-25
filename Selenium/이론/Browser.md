@@ -205,107 +205,106 @@ with webdriver.Chrome() as driver:
     
     
     
- <h2>Create new window or new tab and switch</h2>
+<h2>Create new window or new tab and switch</h2>
  
- #opens a new tab and switches to new tab<br>
- driver.switch_to.new_window('tab')<br><br>
+#opens a new tab and switches to new tab<br>
+driver.switch_to.new_window('tab')<br><br>
+
+#opens a new windown and switches to new window<br>
+driver.switch_to.new_window('window')<br><br>
  
- #opens a new windown and switches to new window<br>
- driver.switch_to.new_window('window')<br><br>
+<h2>Closing a window or tab</h2>
  
- <h2>Closing a window or tab</h2>
+#Close the tab or window<br>
+driver.close()<br><br>
  
- #Close the tab or window<br>
- driver.close()<br><br>
+#Switch back to the old tab or window<br>
+driver.switch_to.window(original_window)<br><br>
  
- #Switch back to the old tab or window<br>
- driver.switch_to.window(original_window)<br><br>
+<h2>Quitting the browser at the end of a session</h2>
  
- <h2>Quitting the browser at the end of a session</h2>
- 
- driver.quit()<br><br>
- 
- 
- 
- <h1>Window management</h1>
- 
- <h2>Get windown size</h2>
- 
- #Access each dimension individually<br>
- width = driver.get_window_size().get("width")<br>
- height = driver.get_window_size().get("height")<br><br>
- 
- #Or store the dimensions and query them later<br>
- size = driver.get_window_size()<br>
- width1 = size.get("width")<br>
- height1 = size.get("height")<br><br>
- 
- <h2>Set window size</h2>
- 
- driver.set_window_size(1024, 768)<br><br>
- 
- <h2>Get window position</h2>
- 
- #Access each dimension individually<br>
- x = driver.get_window_position().get('x')<br>
- y = driver.get_window_position().get('y')<br><br>
- 
- #Or store the dimenstions and query them later<br>
- position = driver.get_window_position()<br>
- x1 = position.get('x')<br>
- y1 = position.get('y')<br><br>
- 
- <h1>Set window size</h1>
- 
- #Move the window to the top left of the primary window.<br>
- driver.set_window_position(0,0)<br><br>
- 
- <h2>Maximize window</h2>
- 
- driver.maximize_window()<br><br>
- 
- <h2>Minimize window</h2>
- 
- driver.minimize_window()<br><br>
- 
- <h2>Fullscreen window(F11)</h2>
- 
- drvier.fullscreen_window()<br><br>
- 
- <h2>Takescreenshot</h2>
- 
- <pre><code>
- from selenium import webdriver
- 
- driver = webdriver.Chrome()
- 
- driver.get("htttp://example.com")
- 
- #Returns and base64 encoded string into image.
- driver.save_screenshot('./image.png')
- 
- driver.quit()</code>
- </pre>
+driver.quit()<br><br>
  
  
- <h2>TakeElementScreenshot</h2>
- <pre>
- <code>
+ 
+<h1>Window management</h1>
+ 
+<h2>Get windown size</h2>
+ 
+#Access each dimension individually<br>
+width = driver.get_window_size().get("width")<br>
+height = driver.get_window_size().get("height")<br><br>
+ 
+#Or store the dimensions and query them later<br>
+size = driver.get_window_size()<br>
+width1 = size.get("width")<br>
+height1 = size.get("height")<br><br>
+ 
+<h2>Set window size</h2>
+ 
+driver.set_window_size(1024, 768)<br><br>
+ 
+<h2>Get window position</h2>
+ 
+#Access each dimension individually<br>
+x = driver.get_window_position().get('x')<br>
+y = driver.get_window_position().get('y')<br><br>
+ 
+#Or store the dimenstions and query them later<br>
+position = driver.get_window_position()<br>
+x1 = position.get('x')<br>
+y1 = position.get('y')<br><br>
+
+<h1>Set window size</h1>
+
+#Move the window to the top left of the primary window.<br>
+driver.set_window_position(0,0)<br><br>
+
+<h2>Maximize window</h2>
+
+driver.maximize_window()<br><br>
+
+<h2>Minimize window</h2>
+
+driver.minimize_window()<br><br>
+
+<h2>Fullscreen window(F11)</h2>
+
+drvier.fullscreen_window()<br><br>
+
+<h2>Takescreenshot</h2>
+ 
+<pre><code>
+from selenium import webdriver
+ 
+driver = webdriver.Chrome()
+ 
+driver.get("htttp://example.com")
+ 
+#Returns and base64 encoded string into image.
+driver.save_screenshot('./image.png')
+
+driver.quit()</code>
+</pre>
+
+ 
+<h2>TakeElementScreenshot</h2>
+<pre>
+<code>
 from selenium import webdriver
 from selenium.webdriver.common.by import By
- 
- driver = webdriver.Chrome()
- 
- driver.get("http://example.com")
- 
- ele = driver.find_element(By.CSS_SELECTOR, "h1")
- 
- #Returns and base64 encoded string into image.
- driver.save_screenshot('./image.png')
- 
- driver.quit()</code>
- </pre>
 
+driver = webdriver.Chrome()
+
+driver.get("http://example.com")
+ 
+ele = driver.find_element(By.CSS_SELECTOR, "h1")
+ 
+#Returns and base64 encoded string into image.
+driver.save_screenshot('./image.png')
+
+driver.quit()</code>
+</pre>
 
 
 <h2>Execute script</h2>
