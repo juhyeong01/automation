@@ -199,7 +199,8 @@ with webdriver.Chrome() as driver:
             break
             
     #Wait for the new tab to finish loading content
-    wait.until(EC.title_is("SeleniumHQ Browser Automation")</code></pre>
+    wait.until(EC.title_is("SeleniumHQ Browser Automation")</code>
+ </pre>
     
     
     
@@ -275,7 +276,8 @@ with webdriver.Chrome() as driver:
  #Returns and base64 encoded string into image.
  driver.save_screenshot('./image.png')
  
- driver.quit()</code></pre>
+ driver.quit()</code>
+ </pre>
  
  
  
