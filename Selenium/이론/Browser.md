@@ -288,4 +288,20 @@ with webdriver.Chrome() as driver:
  </pre>
  
  
+ <h2>TakeElementScreenshot</h2>
+ <pre>
+ <code>
+ from selenium import webdriver
+ from selenium.webdriver.common.by import By
  
+ driver = webdriver.Chrome()
+ 
+ driver.get("http://example.com")
+ 
+ ele = driver.find_element(By.CSS_SELECTOR, "h1")
+ 
+ #Returns and base64 encoded string into image.
+ driver.save_screenshot('./image.png')
+ 
+ driver.quit()</code>
+ </pre>
