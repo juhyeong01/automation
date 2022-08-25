@@ -35,3 +35,12 @@ cancel_locator = locate_with(By.TAG_NAME, "button").to_left_of({By.ID : "submit"
 <h2> Right of</h2>
 
 submit_locator = locate_with(By.TAG_NAME, "button").to_right_of({By.ID : "cancel"})<br><br>
+
+
+<h2> Near</h2>
+
+email_locator = locate_with(By.TAG_NAME, "input").near({By.ID : "lbl-element"})<br><br>
+
+<h2> Chaining relative locators</h2>
+
+submit_locator = locate_with(By.TAG_NAME, "button").below({By.ID : "email"}).to_right_of({By.ID : "cancel"})<br><br>
