@@ -199,8 +199,9 @@ with webdriver.Chrome() as driver:
             break
             
     #Wait for the new tab to finish loading content
-    wait.until(EC.title_is("SeleniumHQ Browser Automation")</code>
- </pre>
+    wait.until(EC.title_is("SeleniumHQ Browser Automation")
+</code>
+</pre>
     
     
     
