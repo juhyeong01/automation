@@ -206,6 +206,7 @@ with webdriver.Chrome() as driver:
     
     
  <h2>Create new window or new tab and switch</h2>
+ 
  #opens a new tab and switches to new tab<br>
  driver.switch_to.new_window('tab')<br><br>
  
@@ -213,6 +214,7 @@ with webdriver.Chrome() as driver:
  driver.switch_to.new_window('window')<br><br>
  
  <h2>Closing a window or tab</h2>
+ 
  #Close the tab or window<br>
  driver.close()<br><br>
  
@@ -220,6 +222,7 @@ with webdriver.Chrome() as driver:
  driver.switch_to.window(original_window)<br><br>
  
  <h2>Quitting the browser at the end of a session</h2>
+ 
  driver.quit()<br><br>
  
  
@@ -227,6 +230,7 @@ with webdriver.Chrome() as driver:
  <h1>Window management</h1>
  
  <h2>Get windown size</h2>
+ 
  #Access each dimension individually<br>
  width = driver.get_window_size().get("width")<br>
  height = driver.get_window_size().get("height")<br><br>
@@ -252,16 +256,20 @@ with webdriver.Chrome() as driver:
  y1 = position.get('y')<br><br>
  
  <h1>Set window size</h1>
+ 
  #Move the window to the top left of the primary window.<br>
  driver.set_window_position(0,0)<br><br>
  
  <h2>Maximize window</h2>
+ 
  driver.maximize_window()<br><br>
  
  <h2>Minimize window</h2>
+ 
  driver.minimize_window()<br><br>
  
  <h2>Fullscreen window(F11)</h2>
+ 
  drvier.fullscreen_window()<br><br>
  
  <h2>Takescreenshot</h2>
