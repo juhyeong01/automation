@@ -305,3 +305,27 @@ from selenium.webdriver.common.by import By
  
  driver.quit()</code>
  </pre>
+
+
+
+<h2>Execute script</h2>
+
+#Stores the header element<br>
+header = driver.find_element(By.CSS_SELECTOR, "h1")<br><br>
+
+#Executing JavaScript to capture innerText of header element<br>
+driver.execute_script('return arguments[0].innerText', header)<br><br>
+
+<h2>Print Page</h2>
+
+<pre>
+<code>from selenium.webdriver.common.print_page_options import PrintOptions
+
+print_options = PrintOptions()
+print_options.page_ranges = ['1-2']
+
+driver.get("printPage.html")
+
+base64code = driver.print_page(print_options)</code>
+</pre>
+
