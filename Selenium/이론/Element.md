@@ -1,0 +1,20 @@
+<h1>Web element</h1>
+
+Identifying and working with element objects in the DOM<br><br>
+
+<h1>Locator strategies</h1>
+
+Ways to identify one or more specific elements in the DOM<br><br>
+
+<h2>Locator : Description</h2>
+
+class name : Locates elements whose class name contains the search value(compound class names are not permitted)<br><br>
+css selector : Locates elements matching a CSS selector<br><br>
+id : Locates elements whose ID attributes matches the search value<br><br>
+name : Locates elements whose NAME attribute matches the search value<br><br>
+link text : Locates anchor elements whose visible text matches the search value<br><br>
+partial link text : Locates anchor elements whose visible text contains the search value. If multiple elements are matching, only the first one will be selected<br><br>
+tag name : Locates elements whose tag name amtches the search value<br><br>
+xpath : Locates elements matching an XPATH expression<br><br>
+
+<h2> Relative Locators</h2>
