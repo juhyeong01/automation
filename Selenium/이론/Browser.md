@@ -290,6 +290,7 @@ driver.quit()</code>
 
  
 <h2>TakeElementScreenshot</h2>
+
 <pre>
 <code>
 from selenium import webdriver
